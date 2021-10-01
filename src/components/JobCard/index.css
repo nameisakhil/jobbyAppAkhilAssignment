@@ -1,0 +1,180 @@
+.link-item {
+  text-decoration: none;
+  margin-bottom: 48px;
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .link-item {
+    width: 100%;
+  }
+}
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #121212;
+}
+
+.compony-profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.compony-logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .company-logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.compony-title-rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'roboto';
+  color: #f8fafc;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  color: #fbbf24;
+  width: 16px;
+  height: 16px;
+}
+
+.job-rating {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'roboto';
+  color: #f8fafc;
+  padding: 0px;
+}
+
+.location-type-package-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-type-container {
+  display: flex;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.symbol {
+  color: #f1f5f9;
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+}
+
+.location {
+  font-size: 1px;
+  font-weight: 500;
+  font-family: 'roboto';
+  color: #f8fafc;
+}
+
+@media screen and (min-width: 768px) {
+  .location {
+    font-size: 18px;
+  }
+}
+
+.type-container {
+  display: flex;
+  align-items: center;
+}
+
+.type {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'roboto';
+  color: #f8fafc;
+}
+
+@media screen and (min-width: 768px) {
+  .type {
+    font-size: 18px;
+  }
+}
+
+.package {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'roboto';
+  color: #f8fafc;
+}
+
+@media screen and (min-width: 768px) {
+  .package {
+    font-size: 20px;
+  }
+}
+
+.hr {
+  background-color: #7e858e;
+  width: 100%;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-heading {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'roboto';
+  color: #f8fafc;
+}
+
+@media screen and (min-width: 768px) {
+  .description-heading {
+    font-size: 24px;
+  }
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'roboto';
+  color: #f8fafc;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 16px;
+  }
+}

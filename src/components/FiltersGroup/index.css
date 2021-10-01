@@ -1,0 +1,134 @@
+.filters-group-container {
+  margin-top: 16px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-group-container {
+    width: 25%;
+    max-width: 280px;
+    min-width: 240px;
+    margin-top: 48px;
+    flex-shrink: 0;
+  }
+}
+
+.search-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #121212;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #f1f5f9;
+  height: 32px;
+  width: 100%;
+  border-style: solid;
+}
+
+.search-input {
+  background-color: #000000;
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  height: 30px;
+  width: 100%;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.search-icon {
+  color: #f1f5f9;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+
+.employment-type-heading {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .employment-type-heading {
+    margin-top: 32px;
+  }
+}
+
+.category-item {
+  list-style-type: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .category-item {
+    margin-top: 24px;
+  }
+}
+
+.category-name {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .category-name {
+    font-size: 18px;
+  }
+}
+
+.active-category-name {
+  color: #0967d2;
+}
+
+.salary-range-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+.salary-range-list {
+  padding-left: 0px;
+}
+
+.salary-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.and-above {
+  color: #f1f5f9;
+  font-family: Roboto;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .and-above {
+    font-size: 18px;
+    margin-left: 14px;
+  }
+}
+
+.active-salary {
+  color: #0967d2;
+}
