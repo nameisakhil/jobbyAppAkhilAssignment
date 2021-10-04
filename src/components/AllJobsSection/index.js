@@ -8,41 +8,41 @@ import JobCard from '../JobCard'
 
 import './index.css'
 
-const typeOfEmployment = [
+const employmentTypesList = [
   {
-    name: 'Full Time',
-    categoryId: '1',
+    label: 'Full Time',
+    employmentTypeId: 'FULLTIME',
   },
   {
-    name: 'Part Time',
-    categoryId: '2',
+    label: 'Part Time',
+    employmentTypeId: 'PARTTIME',
   },
   {
-    name: 'Freelance',
-    categoryId: '3',
+    label: 'Freelance',
+    employmentTypeId: 'FREELANCE',
   },
   {
-    name: 'Internship',
-    categoryId: '4',
+    label: 'Internship',
+    employmentTypeId: 'INTERNSHIP',
   },
 ]
 
-const salaryRange = [
+const salaryRangesList = [
   {
-    optionId: '10',
-    salary: '10LPA',
+    salaryRangeId: '1000000',
+    label: '10 LPA and above',
   },
   {
-    optionId: '20',
-    salary: '20LPA',
+    salaryRangeId: '2000000',
+    label: '20 LPA and above',
   },
   {
-    optionId: '30',
-    salary: '30LPA',
+    salaryRangeId: '3000000',
+    label: '30 LPA and above',
   },
   {
-    optionId: '40',
-    salary: '40LPA',
+    salaryRangeId: '4000000',
+    label: '40 LPA and above',
   },
 ]
 
@@ -213,8 +213,8 @@ class AllJobsSection extends Component {
           searchInput={searchInput}
           activeSalaryRange={activeSalaryRange}
           activeTypeOfEmployment={activeTypeOfEmployment}
-          salaryRange={salaryRange}
-          typeOfEmployment={typeOfEmployment}
+          salaryRangesList={salaryRangesList}
+          employmentTypesList={employmentTypesList}
           changeSearchInput={this.changeSearchInput}
           changeActiveSalaryRange={this.changeActiveSalaryRange}
           changeActiveTypeOfEmployment={this.changeActiveTypeOfEmployment}
