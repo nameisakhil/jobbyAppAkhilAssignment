@@ -22,7 +22,11 @@ const FiltersGroup = props => {
           className="category-item"
           onClick={onClickTypeOfEmployment}
         >
-          <input type="checkbox" id={type.employmentTypeId} />
+          <input
+            type="checkbox"
+            id={type.employmentTypeId}
+            checked={activeTypeOfEmployment === type.employmentTypeId}
+          />
           <label
             className={typeOfEmploymentClassName}
             htmlFor={type.employmentTypeId}
@@ -60,7 +64,11 @@ const FiltersGroup = props => {
           key={salary.salaryRangeId}
           onClick={onClickSalaryRange}
         >
-          <input type="radio" id={salary.salaryRangeId} />
+          <input
+            type="radio"
+            id={salary.salaryRangeId}
+            checked={activeSalaryRange === salary.salaryRangeId}
+          />
           <label
             htmlFor={salary.salaryRangeId}
             className={salaryRangeClassName}
@@ -103,7 +111,9 @@ const FiltersGroup = props => {
           onChange={onChangeSearchInput}
           onKeyDown={onEnterSearchInput}
         />
-        <BsSearch className="search-icon" />
+        <button type="button" className="search-btn" testid="searchButton">
+          <BsSearch className="search-icon" />
+        </button>
       </div>
     )
   }
