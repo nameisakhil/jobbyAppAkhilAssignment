@@ -69,7 +69,7 @@ class AllJobsSection extends Component {
   getJobDetails = async () => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
 
-    const jwtToken = Cookies.get('jobby_jwt_token')
+    const jwtToken = Cookies.get('jwt_token')
 
     const {activeTypeOfEmployment, activeSalaryRange, searchInput} = this.state
 
@@ -184,7 +184,7 @@ class AllJobsSection extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="jobs-loader-container">
+    <div className="jobs-loader-container" testid="loader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
